@@ -1,0 +1,6 @@
+- name: Déploiement des sites
+  hosts: localhost
+  become: true
+  vars:
+   site_content: "<html><body><h1>Ceci est un site </h1></body></html>"
+  tasks:
