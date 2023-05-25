@@ -1,27 +1,22 @@
-# Ansible 
-Ansible est un outil populaire de gestion de la configuration, de déploiement d'applications et d'automatisation des tâches informatiques. Il est utilisé pour orchestrer et gérer des systèmes informatiques, des réseaux et des infrastructures de cloud computing.
+# Ansible
+Ansible is a popular tool for configuration management, application deployment, and IT task automation. It is used to orchestrate and manage computer systems, networks, and cloud computing infrastructures.
 
-## Ce qu'il faut savoir sur Ansible
--Architecture client-serveur : Ansible suit une architecture client-serveur avec un contrôleur et des nœuds gérés.
+## What you need to know about Ansible
+- Client-Server Architecture: Ansible follows a client-server architecture with a controller and managed nodes.
+- Inventory: The inventory is a file that lists the remote machines on which you want to perform actions.
+- Playbooks: Playbooks are YAML files that describe the tasks to be executed on the managed nodes.
+- Modules: Ansible uses modules to perform specific actions on the managed nodes.
+- Tasks: Tasks are actions to be performed on the managed nodes and are associated with modules.
+- Ad-hoc Commands: Ansible allows you to run one-off commands without creating a playbook.
 
--Inventaire : L'inventaire est un fichier qui répertorie les machines distantes sur lesquelles vous souhaitez exécuter des actions.
+## Preparing to use Ansible
+First, you need to install it on Linux.
 
--Playbooks : Les playbooks sont des fichiers YAML qui décrivent les tâches à exécuter sur les nœuds gérés.
-
--Modules : Ansible utilise des modules pour effectuer des actions spécifiques sur les nœuds gérés.
-
--Tâches : Les tâches sont des actions à effectuer sur les nœuds gérés et sont associées à des modules.
-
--Commandes ad-hoc : Ansible permet d'exécuter des commandes ponctuelles sans créer de playbook.
-
-## Travail à faire avant d'utiliser Ansible
-Tous d'abord il faut l'installer sur linux
-
-Puis tapez les commnades suivants :
+Then, run the following commands:
 
 sudo apt update
 sudo apt upgrade
 
-Et enfin installer Ansible à l'aide des commandes suivantes :
+Finally, install Ansible using the following commands:
 
 sudo apt install ansible
