@@ -21,7 +21,7 @@
      loop: {{ script_out.stdout_lines }}
         - name: Générer les fichiers de configurations d'Apache2
      template:
-       src: "ansible/virtual_host.conf.j2"
+       src: "host.conf"
        dest: "/etc/apache2/sites-available/{{ item }}.conf"
      loop: {{ script_out.stdout_lines }}
      notify: Reload Apache2
